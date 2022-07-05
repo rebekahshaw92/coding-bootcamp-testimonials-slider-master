@@ -1,0 +1,85 @@
+* {
+  box-sizing: content-box;
+}
+
+body {
+  background-image: url('../images/pattern-curve.svg');
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: bottom left;
+  padding: 1px 0 70px;
+  margin: 30px 0 0;
+}
+
+.slider {
+  background-image: url('../images/pattern-bg.svg');
+  background-size: 90%;
+  background-position: 48% 5%;
+  background-repeat: no-repeat;
+  display: none;
+  @include media-breakpoint-up(lg) {
+    padding:20px 30px;
+    background-size: 50%;
+    background-position: 95% 0%;
+    .row {
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+.sliderTanya {
+  width: 68%;
+  margin: 60px 70px;
+  border-radius: 8px;
+  box-shadow: 0 5px 30px 0 rgba(24, 24, 24, 0.322);
+  @include media-breakpoint-up(lg){
+    width: 80%;
+    margin: 50px 30px;
+  }
+}
+
+.mainText {
+  //margin: 20px 0 0;
+  padding: 30px 10px 20px;
+  background: url("../images/pattern-quotes.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 15%;
+  @include media-breakpoint-up(lg) {
+    margin:150px 100px 0px 0px;
+    padding:60px 0px 30px;
+    position: relative;
+    padding-left: 100px;
+    background-position: 32% 5%;
+    width: 110%;
+  }
+}
+
+aside {
+  padding: 0px 3px;
+  border-radius: 100px;
+  background-color: #fff;
+  position: absolute;
+  top: 380px;
+  left: 40%;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 3px 10px 0 rgba(24, 24, 24, 0.473);
+  z-index: 3;
+  cursor: pointer;
+  display: none;
+  .prev {
+      padding: 10px 15px 10px 8px;
+  }
+
+  .next {
+    padding: 10px 8px 10px 15px;
+  }
+  @include media-breakpoint-up(lg) {
+    top: 620px;
+    left: 60%;
+  }
+}
+
+

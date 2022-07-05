@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> <!-- Bootstrap 5 -->
+
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+
+
+
+  <title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
+
+</head>
+<body onload="pressDown()">
+  <main>
+
+    <aside class="d-flex">
+      <a onclick="plusSlides(-1)"><img src="images/icon-prev.svg" class="prev" alt="prev"></a>
+      <a onclick="plusSlides(1)"><img src="images/icon-next.svg" class="next" alt="next"></a>
+    </aside>
+
+    <div class="slider">
+      <div class="row d-flex">
+        <div class="col-lg">
+      <img src="images/image-tanya.jpg" class="sliderTanya d-flex" alt="tanya">
+</div>
+<div class="col-lg">
+      <p class="text-center text-lg-start mainText">“I’ve been interested in coding for a while but never taken the jump, until now. 
+        I couldn’t recommend this course enough. I’m now in the job of my dreams and so 
+        excited about the future.”</p>
+
+        <h4 class="text-center text-lg-start mainPerson name">Tanya Sinclair</h4>
+          
+
+        <p class="text-center text-lg-start mainPerson subText">UX Engineer</p>
+    </div>
+</div>
+</div>
+    <div class="slider">
+      <div class="row d-flex">
+        <div class="col-lg">
+      <img src="images/image-john.jpg" class="sliderTanya d-flex" alt="john">
+</div>
+<div class="col-lg">
+      <p class="text-center text-lg-start mainText">“If you want to lay the best foundation possible I’d recommend taking this course. 
+        The depth the instructors go into is incredible. I now feel so confident about 
+        starting up as a professional developer.”</p>
+
+        <h4 class="text-center text-lg-start mainPerson name">John Tarkpor</h4>
+
+        <p class="text-center text-lg-start mainPerson subText">Junior Front-end Developer</p>
+        </div>
+    </div>
+    </div>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://rebekahshaw.com" target="_blank">Rebekah Shaw</a>.
+  </div>
+
+</body>
+
+<script type="text/javascript" src="js/script.js"></script>
+</html>
